@@ -27,8 +27,10 @@ class Game:
         for i in range(1, self.num_rounds + 1):
             round_score = self.play_game()
             self._print(f'You banked {round_score} points in round {rounds}')
+
             self.score += round_score
             rounds += 1
+
             self._print(f'Whoo hoo! You have {self.score} points so far')
         self._print('Come play again soon!')
 
